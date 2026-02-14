@@ -16,13 +16,11 @@ export default function Home() {
         <p className="text-xl text-gray-600 mb-8">
           So sánh giá vận chuyển từ nhiều đơn vị giao nhận uy tín trong 24 giờ
         </p>
-        <button className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700">
-          <a 
-            href="/request-quote"
-            className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 inline-block"
-          >
-            Nhận Báo Giá Miễn Phí
-          </a>
+         href="/request-quote"
+          className="bg-blue-600 text-white px-8 py-3 rounded-lg text-lg font-semibold hover:bg-blue-700 inline-block"
+        >
+          Nhận Báo Giá Miễn Phí
+        </a>
         </button>
       </section>
 
