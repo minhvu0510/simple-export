@@ -8,7 +8,9 @@ export default function Home() {
         Xuất khẩu đơn giản từ Việt Nam
       </p>
       <a 
-        href="/request-quote"
+        href="https://forms.gle/https://docs.google.com/forms/d/e/1FAIpQLSdX7PKxERwpNEv29OLYfMDZR4MqTq9n2-HOO99CC9lV4MnjXA/viewform?usp=header"
+        target="_blank"
+        rel="noopener noreferrer"
         className="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700"
       >
         Nhận Báo Giá
