@@ -26,7 +26,7 @@ Loại hàng: ${formData.productType}
 Khối lượng: ${formData.volume}
 Ghi chú: ${formData.notes}
     `;
-    window.location.href = `mailto:hello@simple-export.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = `mailto:admin@simple-export.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
 
   return (
@@ -40,7 +40,7 @@ Ghi chú: ${formData.notes}
               alt="Simple Export"
               className="h-10 w-10 object-contain"
             />
-            <span className="text-2xl font-bold text-blue-600">Simple Export</span>
+            <span className="text-2xl font-bold text-teal-600">Simple Export</span>
           </div>
 
           <div className="hidden md:flex space-x-8">
@@ -63,7 +63,7 @@ Ghi chú: ${formData.notes}
 
           <a 
             href="#quote"
-            className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700"
+            className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-teal-700"
           >
             Nhận Báo Giá
           </a>
@@ -74,7 +74,7 @@ Ghi chú: ${formData.notes}
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Xuất Khẩu <span className="text-blue-600">Thật Đơn Giản</span>
+              Xuất Khẩu <span className="text-teal-600">Thật Đơn Giản</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8">
               So sánh giá vận chuyển từ nhiều đơn vị giao nhận uy tín trong 24 giờ. 
@@ -83,13 +83,13 @@ Ghi chú: ${formData.notes}
             <div className="flex space-x-4">
               <a 
                 href="#quote"
-                className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 shadow-lg"
+                className="bg-teal-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 shadow-lg"
               >
                 Nhận Báo Giá Miễn Phí
               </a>
               <a 
                 href="#how-it-works"
-                className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50"
+                className="bg-white text-teal-600 border-2 border-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50"
               >
                 Tìm Hiểu Thêm
               </a>
@@ -369,7 +369,7 @@ Ghi chú: ${formData.notes}
 
               <button
                 type="submit"
-                className="w-full bg-blue-600 text-white py-4 rounded-lg font-bold text-lg hover:bg-blue-700 shadow-lg transition-colors"
+                className="w-full bg-teal-600 text-white py-4 rounded-lg font-bold text-lg hover:bg-blue-700 shadow-lg transition-colors"
               >
                 Gửi Yêu Cầu Báo Giá
               </button>
@@ -438,24 +438,26 @@ Ghi chú: ${formData.notes}
           <div className="grid md:grid-cols-3 gap-8">
             <div className="bg-gray-50 rounded-xl p-6">
               <div className="text-4xl mb-4">📧</div>
-              <h3 className="font-bold text-lg mb-2">Email</h3>
-              <a href="mailto:hello@simple-export.com" className="text-blue-600 hover:underline">
-                hello@simple-export.com
+              <h3 className="font-bold text-lg mb-2 text-gray-900">Email</h3>
+              <a href="mailto:hello@simple-export.com" className="text-teal-600 hover:underline">
+                admin@simple-export.com
               </a>
             </div>
 
             <div className="bg-gray-50 rounded-xl p-6">
               <div className="text-4xl mb-4">📱</div>
-              <h3 className="font-bold text-lg mb-2">Hotline</h3>
-              <a href="tel:+84901234567" className="text-blue-600 hover:underline">
-                (+84) 901 234 567
+              <h3 className="font-bold text-lg mb-2 text-gray-900">Hotline</h3>
+              <a href="tel:+84969856557" className="text-teal-600 hover:underline">
+                (+84) 969 856 557
               </a>
             </div>
 
             <div className="bg-gray-50 rounded-xl p-6">
               <div className="text-4xl mb-4">💬</div>
-              <h3 className="font-bold text-lg mb-2">Zalo</h3>
-              <span className="text-gray-600">Chat với chúng tôi</span>
+              <h3 className="font-bold text-lg mb-2 text-gray-900">Zalo</h3>
+              <a href="https://zalo.me/0969856557" className="text-teal-600 hover:underline">
+                (+84) 969 856 557
+              </a>
             </div>
           </div>
         </div>
