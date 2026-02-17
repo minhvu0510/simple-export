@@ -93,6 +93,14 @@ Ghi chú: ${formData.notes}
               >
                 Tìm Hiểu Thêm
               </a>
+              <a 
+                href="https://docs.google.com/forms/d/1ewsa9rgvyFKYh6pc1O4ix0Yhk_591AW1Xq5y6K5ZHu4/edit"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-gray-800 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-900 shadow-lg"
+              >
+                Khảo Sát
+              </a>
             </div>
 
             <div className="mt-12 flex items-center space-x-8 text-sm text-gray-500">
