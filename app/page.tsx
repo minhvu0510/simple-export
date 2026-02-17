@@ -63,7 +63,7 @@ Ghi chú: ${formData.notes}
 
           <a 
             href="#quote"
-            className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-teal-700"
+            className="bg-teal-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-teal-700"
           >
             Nhận Báo Giá
           </a>
@@ -89,7 +89,7 @@ Ghi chú: ${formData.notes}
               </a>
               <a 
                 href="#how-it-works"
-                className="bg-white text-teal-600 border-2 border-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50"
+                className="bg-white text-teal-600 border-2 border-teal-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50"
               >
                 Tìm Hiểu Thêm
               </a>
@@ -182,7 +182,7 @@ Ghi chú: ${formData.notes}
 
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">
+              <div className="w-20 h-20 bg-teal-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">
                 1
               </div>
               <h3 className="text-xl font-bold mb-3">Điền Thông Tin</h3>
@@ -192,7 +192,7 @@ Ghi chú: ${formData.notes}
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">
+              <div className="w-20 h-20 bg-teal-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">
                 2
               </div>
               <h3 className="text-xl font-bold mb-3">Nhận Báo Giá</h3>
@@ -202,7 +202,7 @@ Ghi chú: ${formData.notes}
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">
+              <div className="w-20 h-20 bg-teal-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">
                 3
               </div>
               <h3 className="text-xl font-bold mb-3">So Sánh & Chọn</h3>
@@ -212,7 +212,7 @@ Ghi chú: ${formData.notes}
             </div>
 
             <div className="text-center">
-              <div className="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">
+              <div className="w-20 h-20 bg-teal-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">
                 4
               </div>
               <h3 className="text-xl font-bold mb-3">Đặt Hàng & Vận Chuyển</h3>
@@ -402,15 +402,15 @@ Ghi chú: ${formData.notes}
 
             <div className="grid grid-cols-3 gap-6 text-center">
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">100+</div>
+                <div className="text-3xl font-bold text-teal-600 mb-2">100+</div>
                 <div className="text-sm text-gray-600">Forwarders uy tín</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">500+</div>
+                <div className="text-3xl font-bold text-teal-600 mb-2">500+</div>
                 <div className="text-sm text-gray-600">Lô hàng thành công</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-blue-600 mb-2">25%</div>
+                <div className="text-3xl font-bold text-teal-600 mb-2">25%</div>
                 <div className="text-sm text-gray-600">Tiết kiệm trung bình</div>
               </div>
             </div>
