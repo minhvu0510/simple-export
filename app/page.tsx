@@ -15,16 +15,16 @@ export default function Home() {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
-    const subject = 'Yeu cau bao gia - Simple Export';
+    const subject = 'Yêu cầu báo giá - Simple Export';
     const body = `
-Ten: ${formData.name}
+Tên: ${formData.name}
 Email: ${formData.email}
 Phone: ${formData.phone}
-Xuat phat: ${formData.origin}
-Dich den: ${formData.destination}
-Loai hang: ${formData.productType}
-Khoi luong: ${formData.volume}
-Ghi chu: ${formData.notes}
+Xuất phát: ${formData.origin}
+Đích đến: ${formData.destination}
+Loại hàng: ${formData.productType}
+Khối lượng: ${formData.volume}
+Ghi chú: ${formData.notes}
     `;
     window.location.href = `mailto:hello@simple-export.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   };
@@ -33,28 +33,31 @@ Ghi chu: ${formData.notes}
     <div className="min-h-screen bg-white">
       <header className="bg-white shadow-sm sticky top-0 z-50">
         <nav className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-xl">SE</span>
-            </div>
+          <div className="flex items-center space-x-3">
+            {/* Logo */}
+            <img
+              src="/images/logo.png"
+              alt="Simple Export"
+              className="h-10 w-10 object-contain"
+            />
             <span className="text-2xl font-bold text-blue-600">Simple Export</span>
           </div>
 
           <div className="hidden md:flex space-x-8">
             <a href="#home" className="text-gray-700 hover:text-blue-600 font-medium">
-              Trang Chu
+              Trang Chủ
             </a>
             <a href="#features" className="text-gray-700 hover:text-blue-600 font-medium">
-              Tinh Nang
+              Tính Năng
             </a>
             <a href="#how-it-works" className="text-gray-700 hover:text-blue-600 font-medium">
-              Cach Hoat Dong
+              Cách Hoạt Động
             </a>
             <a href="#about" className="text-gray-700 hover:text-blue-600 font-medium">
-              Ve Chung Toi
+              Về Chúng Tôi
             </a>
             <a href="#contact" className="text-gray-700 hover:text-blue-600 font-medium">
-              Lien He
+              Liên Hệ
             </a>
           </div>
 
@@ -62,7 +65,7 @@ Ghi chu: ${formData.notes}
             href="#quote"
             className="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700"
           >
-            Nhan Bao Gia
+            Nhận Báo Giá
           </a>
         </nav>
       </header>
@@ -71,39 +74,39 @@ Ghi chu: ${formData.notes}
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-5xl font-bold text-gray-900 mb-6">
-              Xuat Khau <span className="text-blue-600">That Don Gian</span>
+              Xuất Khẩu <span className="text-blue-600">Thật Đơn Giản</span>
             </h1>
             <p className="text-xl text-gray-600 mb-8">
-              So sanh gia van chuyen tu nhieu don vi giao nhan uy tin trong 24 gio. 
-              Tiet kiem 15-30% chi phi logistics.
+              So sánh giá vận chuyển từ nhiều đơn vị giao nhận uy tín trong 24 giờ. 
+              Tiết kiệm 15-30% chi phí logistics.
             </p>
             <div className="flex space-x-4">
               <a 
                 href="#quote"
                 className="bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-700 shadow-lg"
               >
-                Nhan Bao Gia Mien Phi
+                Nhận Báo Giá Miễn Phí
               </a>
               <a 
                 href="#how-it-works"
                 className="bg-white text-blue-600 border-2 border-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50"
               >
-                Tim Hieu Them
+                Tìm Hiểu Thêm
               </a>
             </div>
 
             <div className="mt-12 flex items-center space-x-8 text-sm text-gray-500">
               <div className="flex items-center space-x-2">
                 <span className="text-green-500 text-2xl">✓</span>
-                <span>Mien phi so sanh</span>
+                <span>Miễn phí so sánh</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span className="text-green-500 text-2xl">✓</span>
-                <span>Forwarders uy tin</span>
+                <span>Forwarders uy tín</span>
               </div>
               <div className="flex items-center space-x-2">
                 <span className="text-green-500 text-2xl">✓</span>
-                <span>Bao gia nhanh 24h</span>
+                <span>Báo giá nhanh 24h</span>
               </div>
             </div>
           </div>
@@ -122,10 +125,10 @@ Ghi chu: ${formData.notes}
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Tai Sao Chon Simple Export?
+              Tại Sao Chọn Simple Export?
             </h2>
             <p className="text-xl text-gray-600">
-              Giai phap toan dien cho doanh nghiep SME xuat khau
+              Giải pháp toàn diện cho doanh nghiệp SME xuất khẩu
             </p>
           </div>
 
@@ -134,10 +137,10 @@ Ghi chu: ${formData.notes}
               <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
                 <span className="text-4xl">💰</span>
               </div>
-              <h3 className="text-2xl font-bold mb-4">Tiet Kiem 15-30%</h3>
+              <h3 className="text-2xl font-bold mb-4">Tiết Kiệm 15-30%</h3>
               <p className="text-gray-600">
-                So sanh gia tu nhieu forwarders, chon duoc option tot nhat. 
-                Trung binh tiet kiem 15-30% chi phi logistics.
+                So sánh giá từ nhiều forwarders, chọn được option tốt nhất. 
+                Trung bình tiết kiệm 15-30% chi phí logistics.
               </p>
             </div>
 
@@ -145,10 +148,10 @@ Ghi chu: ${formData.notes}
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
                 <span className="text-4xl">⚡</span>
               </div>
-              <h3 className="text-2xl font-bold mb-4">Nhanh Chong</h3>
+              <h3 className="text-2xl font-bold mb-4">Nhanh Chóng</h3>
               <p className="text-gray-600">
-                Nhan 3-5 bao gia trong 24-48 gio thay vi mat 1-2 tuan 
-                tim kiem va dam phan thu cong.
+                Nhận 3-5 báo giá trong 24-48 giờ thay vì mất 1-2 tuần 
+                tìm kiếm và đàm phán thủ công.
               </p>
             </div>
 
@@ -156,10 +159,10 @@ Ghi chu: ${formData.notes}
               <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
                 <span className="text-4xl">✅</span>
               </div>
-              <h3 className="text-2xl font-bold mb-4">Uy Tin va Minh Bach</h3>
+              <h3 className="text-2xl font-bold mb-4">Uy Tín & Minh Bạch</h3>
               <p className="text-gray-600">
-                Forwarders duoc xac minh giay phep, bao hiem. 
-                Breakdown chi phi ro rang, khong phi an.
+                Forwarders được xác minh giấy phép, bảo hiểm. 
+                Breakdown chi phí rõ ràng, không phí ẩn.
               </p>
             </div>
           </div>
@@ -170,10 +173,10 @@ Ghi chu: ${formData.notes}
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Cach Hoat Dong
+              Cách Hoạt Động
             </h2>
             <p className="text-xl text-gray-600">
-              4 buoc don gian de nhan bao gia tot nhat
+              4 bước đơn giản để nhận báo giá tốt nhất
             </p>
           </div>
 
@@ -182,9 +185,9 @@ Ghi chu: ${formData.notes}
               <div className="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">
                 1
               </div>
-              <h3 className="text-xl font-bold mb-3">Dien Thong Tin</h3>
+              <h3 className="text-xl font-bold mb-3">Điền Thông Tin</h3>
               <p className="text-gray-600">
-                Dien form don gian: xuat phat, dich den, loai hang, khoi luong
+                Điền form đơn giản: xuất phát, đích đến, loại hàng, khối lượng
               </p>
             </div>
 
@@ -192,9 +195,9 @@ Ghi chu: ${formData.notes}
               <div className="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">
                 2
               </div>
-              <h3 className="text-xl font-bold mb-3">Nhan Bao Gia</h3>
+              <h3 className="text-xl font-bold mb-3">Nhận Báo Giá</h3>
               <p className="text-gray-600">
-                3-5 forwarders uy tin canh tranh bao gia trong 24-48 gio
+                3-5 forwarders uy tín cạnh tranh báo giá trong 24-48 giờ
               </p>
             </div>
 
@@ -202,9 +205,9 @@ Ghi chu: ${formData.notes}
               <div className="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">
                 3
               </div>
-              <h3 className="text-xl font-bold mb-3">So Sanh va Chon</h3>
+              <h3 className="text-xl font-bold mb-3">So Sánh & Chọn</h3>
               <p className="text-gray-600">
-                Bang so sanh ro rang: gia, thoi gian, danh gia, dich vu
+                Bảng so sánh rõ ràng: giá, thời gian, đánh giá, dịch vụ
               </p>
             </div>
 
@@ -212,9 +215,9 @@ Ghi chu: ${formData.notes}
               <div className="w-20 h-20 bg-blue-600 text-white rounded-full flex items-center justify-center text-3xl font-bold mx-auto mb-4">
                 4
               </div>
-              <h3 className="text-xl font-bold mb-3">Dat Hang va Van Chuyen</h3>
+              <h3 className="text-xl font-bold mb-3">Đặt Hàng & Vận Chuyển</h3>
               <p className="text-gray-600">
-                Chon forwarder phu hop, xac nhan booking, theo doi van chuyen
+                Chọn forwarder phù hợp, xác nhận booking, theo dõi vận chuyển
               </p>
             </div>
           </div>
@@ -225,10 +228,10 @@ Ghi chu: ${formData.notes}
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-gray-900 mb-4">
-              Nhan Bao Gia Mien Phi
+              Nhận Báo Giá Miễn Phí
             </h2>
             <p className="text-xl text-gray-600">
-              Dien thong tin ben duoi, chung toi se gui bao gia trong 24-48 gio
+              Điền thông tin bên dưới, chúng tôi sẽ gửi báo giá trong 24-48 giờ
             </p>
           </div>
 
@@ -236,24 +239,26 @@ Ghi chu: ${formData.notes}
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Ho va ten *
+                  <label htmlFor="name" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Họ và tên *
                   </label>
                   <input
+                    id="name"
                     type="text"
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
                     className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
-                    placeholder="Nguyen Van A"
+                    placeholder="Nguyễn Văn A"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
+                  <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-2">
                     Email *
                   </label>
                   <input
+                    id="email"
                     type="email"
                     required
                     value={formData.email}
@@ -265,10 +270,11 @@ Ghi chu: ${formData.notes}
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  So dien thoai *
+                <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-2">
+                  Số điện thoại *
                 </label>
                 <input
+                  id="phone"
                   type="tel"
                   required
                   value={formData.phone}
@@ -280,24 +286,26 @@ Ghi chu: ${formData.notes}
 
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Xuat phat tu *
+                  <label htmlFor="origin" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Xuất phát từ *
                   </label>
                   <input
+                    id="origin"
                     type="text"
                     required
                     value={formData.origin}
                     onChange={(e) => setFormData({...formData, origin: e.target.value})}
                     className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
-                    placeholder="Ho Chi Minh"
+                    placeholder="Hồ Chí Minh"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">
-                    Dich den *
+                  <label htmlFor="destination" className="block text-sm font-semibold text-gray-700 mb-2">
+                    Đích đến *
                   </label>
                   <input
+                    id="destination"
                     type="text"
                     required
                     value={formData.destination}
@@ -309,50 +317,53 @@ Ghi chu: ${formData.notes}
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  Loai hang hoa *
+                <label htmlFor="productType" className="block text-sm font-semibold text-gray-700 mb-2">
+                  Loại hàng hóa *
                 </label>
                 <select
+                  id="productType"
                   required
                   value={formData.productType}
                   onChange={(e) => setFormData({...formData, productType: e.target.value})}
                   className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
                 >
-                  <option value="">Chon loai hang</option>
-                  <option value="furniture">Noi that / Go</option>
-                  <option value="apparel">Thoi trang / Det may</option>
-                  <option value="electronics">Dien tu / Linh kien</option>
-                  <option value="food">Thuc pham / Nong san</option>
-                  <option value="handicraft">Thu cong my nghe</option>
-                  <option value="machinery">May moc / Thiet bi</option>
-                  <option value="other">Khac</option>
+                  <option value="">Chọn loại hàng</option>
+                  <option value="furniture">Nội thất / Gỗ</option>
+                  <option value="apparel">Thời trang / Dệt may</option>
+                  <option value="electronics">Điện tử / Linh kiện</option>
+                  <option value="food">Thực phẩm / Nông sản</option>
+                  <option value="handicraft">Thủ công mỹ nghệ</option>
+                  <option value="machinery">Máy móc / Thiết bị</option>
+                  <option value="other">Khác</option>
                 </select>
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  Khoi luong / So luong *
+                <label htmlFor="volume" className="block text-sm font-semibold text-gray-700 mb-2">
+                  Khối lượng / Số lượng *
                 </label>
                 <input
+                  id="volume"
                   type="text"
                   required
                   value={formData.volume}
                   onChange={(e) => setFormData({...formData, volume: e.target.value})}
                   className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
-                  placeholder="15 CBM hoac 1x40ft container"
+                  placeholder="15 CBM hoặc 1x40ft container"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  Ghi chu (tuy chon)
+                <label htmlFor="notes" className="block text-sm font-semibold text-gray-700 mb-2">
+                  Ghi chú (tùy chọn)
                 </label>
                 <textarea
+                  id="notes"
                   value={formData.notes}
                   onChange={(e) => setFormData({...formData, notes: e.target.value})}
                   rows={4}
                   className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
-                  placeholder="Yeu cau dac biet: fumigation, bao hiem, ngay du kien..."
+                  placeholder="Yêu cầu đặc biệt: fumigation, bảo hiểm, ngày dự kiến..."
                 />
               </div>
 
@@ -360,11 +371,11 @@ Ghi chu: ${formData.notes}
                 type="submit"
                 className="w-full bg-blue-600 text-white py-4 rounded-lg font-bold text-lg hover:bg-blue-700 shadow-lg transition-colors"
               >
-                Gui Yeu Cau Bao Gia
+                Gửi Yêu Cầu Báo Giá
               </button>
 
               <p className="text-center text-sm text-gray-500">
-                Thong tin cua ban duoc bao mat. Chung toi khong chia se voi ben thu ba.
+                🔒 Thông tin của bạn được bảo mật. Chúng tôi không chia sẻ với bên thứ ba.
               </p>
             </form>
           </div>
@@ -375,37 +386,37 @@ Ghi chu: ${formData.notes}
         <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-4xl font-bold text-gray-900 mb-6">
-              Ve Simple Export
+              Về Simple Export
             </h2>
             <p className="text-lg text-gray-600 mb-4">
-              Simple Export ra doi voi su menh giup cac doanh nghiep SME Viet Nam 
-              xuat khau de dang va tiet kiem hon.
+              Simple Export ra đời với sứ mệnh giúp các doanh nghiệp SME Việt Nam 
+              xuất khẩu dễ dàng và tiết kiệm hơn.
             </p>
             <p className="text-lg text-gray-600 mb-4">
-              Chung toi ket noi ban voi mang luoi cac don vi giao nhan uy tin, 
-              giup so sanh gia ca va dich vu mot cach minh bach.
+              Chúng tôi kết nối bạn với mạng lưới các đơn vị giao nhận uy tín, 
+              giúp so sánh giá cả và dịch vụ một cách minh bạch.
             </p>
             <p className="text-lg text-gray-600 mb-6">
-              Voi Simple Export, xuat khau khong con phuc tap va ton kem nua.
+              Với Simple Export, xuất khẩu không còn phức tạp và tốn kém nữa.
             </p>
 
             <div className="grid grid-cols-3 gap-6 text-center">
               <div>
                 <div className="text-3xl font-bold text-blue-600 mb-2">100+</div>
-                <div className="text-sm text-gray-600">Forwarders uy tin</div>
+                <div className="text-sm text-gray-600">Forwarders uy tín</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-blue-600 mb-2">500+</div>
-                <div className="text-sm text-gray-600">Lo hang thanh cong</div>
+                <div className="text-sm text-gray-600">Lô hàng thành công</div>
               </div>
               <div>
                 <div className="text-3xl font-bold text-blue-600 mb-2">25%</div>
-                <div className="text-sm text-gray-600">Tiet kiem trung binh</div>
+                <div className="text-sm text-gray-600">Tiết kiệm trung bình</div>
               </div>
             </div>
           </div>
 
-          <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
+          <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl">
             <img
               src="/images/about.jpg"
               alt="Simple Export team"
@@ -418,10 +429,10 @@ Ghi chu: ${formData.notes}
       <section id="contact" className="py-20 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-gray-900 mb-6">
-            Lien He Voi Chung Toi
+            Liên Hệ Với Chúng Tôi
           </h2>
           <p className="text-xl text-gray-600 mb-12">
-            Co cau hoi? Chung toi luon san sang ho tro ban
+            Có câu hỏi? Chúng tôi luôn sẵn sàng hỗ trợ bạn
           </p>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -444,7 +455,7 @@ Ghi chu: ${formData.notes}
             <div className="bg-gray-50 rounded-xl p-6">
               <div className="text-4xl mb-4">💬</div>
               <h3 className="font-bold text-lg mb-2">Zalo</h3>
-              <span className="text-gray-600">Chat voi chung toi</span>
+              <span className="text-gray-600">Chat với chúng tôi</span>
             </div>
           </div>
         </div>
