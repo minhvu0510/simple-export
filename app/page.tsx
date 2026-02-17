@@ -248,7 +248,7 @@ Ghi chú: ${formData.notes}
                     required
                     value={formData.name}
                     onChange={(e) => setFormData({...formData, name: e.target.value})}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:outline-none text-gray-900"
                     placeholder="Nguyễn Văn A"
                   />
                 </div>
@@ -263,7 +263,7 @@ Ghi chú: ${formData.notes}
                     required
                     value={formData.email}
                     onChange={(e) => setFormData({...formData, email: e.target.value})}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:outline-none text-gray-900"
                     placeholder="you@company.com"
                   />
                 </div>
@@ -279,7 +279,7 @@ Ghi chú: ${formData.notes}
                   required
                   value={formData.phone}
                   onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:outline-none text-gray-900"
                   placeholder="0901234567"
                 />
               </div>
@@ -295,7 +295,7 @@ Ghi chú: ${formData.notes}
                     required
                     value={formData.origin}
                     onChange={(e) => setFormData({...formData, origin: e.target.value})}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:outline-none text-gray-900"
                     placeholder="Hồ Chí Minh"
                   />
                 </div>
@@ -310,7 +310,7 @@ Ghi chú: ${formData.notes}
                     required
                     value={formData.destination}
                     onChange={(e) => setFormData({...formData, destination: e.target.value})}
-                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                    className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:outline-none text-gray-900"
                     placeholder="Hamburg, Germany"
                   />
                 </div>
@@ -325,7 +325,7 @@ Ghi chú: ${formData.notes}
                   required
                   value={formData.productType}
                   onChange={(e) => setFormData({...formData, productType: e.target.value})}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:outline-none text-gray-900"
                 >
                   <option value="">Chọn loại hàng</option>
                   <option value="furniture">Nội thất / Gỗ</option>
@@ -348,7 +348,7 @@ Ghi chú: ${formData.notes}
                   required
                   value={formData.volume}
                   onChange={(e) => setFormData({...formData, volume: e.target.value})}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:outline-none text-gray-900"
                   placeholder="15 CBM hoặc 1x40ft container"
                 />
               </div>
@@ -362,7 +362,7 @@ Ghi chú: ${formData.notes}
                   value={formData.notes}
                   onChange={(e) => setFormData({...formData, notes: e.target.value})}
                   rows={4}
-                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-blue-500 focus:outline-none"
+                  className="w-full px-4 py-3 border-2 border-gray-200 rounded-lg focus:border-teal-500 focus:outline-none text-gray-900"
                   placeholder="Yêu cầu đặc biệt: fumigation, bảo hiểm, ngày dự kiến..."
                 />
               </div>
