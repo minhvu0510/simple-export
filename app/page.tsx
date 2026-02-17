@@ -108,8 +108,12 @@ Ghi chu: ${formData.notes}
             </div>
           </div>
 
-          <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
-            <span className="text-white text-9xl">🚢</span>
+          <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
+            <img
+              src="/images/hero.jpg"
+              alt="Container shipping"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </section>
@@ -401,8 +405,12 @@ Ghi chu: ${formData.notes}
             </div>
           </div>
 
-          <div className="relative h-96 rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-blue-100 to-blue-200 flex items-center justify-center">
-            <span className="text-8xl">📦</span>
+          <div className="relative h-96 rounded-2xl overflow-hidden shadow-2xl">
+            <img
+              src="/images/about.jpg"
+              alt="Simple Export team"
+              className="w-full h-full object-cover"
+            />
           </div>
         </div>
       </section>
